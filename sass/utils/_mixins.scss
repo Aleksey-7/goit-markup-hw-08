@@ -1,0 +1,10 @@
+@mixin itemSize($container, $gap, $numItems) {
+  max-width: calc(($container - $gap * ($numItems - 1)) / $numItems);
+}
+
+@mixin fonts($fw, $fs, $lh, $ls) {
+  font-weight: $fw;
+  font-size: $fs;
+  line-height: $lh;
+  letter-spacing: $ls;
+}

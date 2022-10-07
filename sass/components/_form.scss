@@ -1,0 +1,93 @@
+.form {
+  width: 100%;
+  padding: 28px;
+  margin: 0 auto;
+
+  @media screen and(min-width:480px) {
+    padding: 40px;
+  }
+}
+
+.form__title {
+  @include fonts(700, 17px, 1.5, 0.03em);
+  color: $title-text-color;
+  text-align: center;
+  margin-bottom: 12px;
+
+  @media screen and(min-width:480px) {
+    font-size: 20px;
+  }
+
+  @media screen and(min-width:1200px) {
+    line-height: 1.14;
+  }
+}
+
+.form__field {
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.form__label {
+  @include fonts(400, 12px, 1.17, 0.01em);
+
+  margin-bottom: 4px;
+}
+
+.form__input {
+  width: 100%;
+  margin: 0;
+  padding: 10px 42px;
+  font: inherit;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  cursor: pointer;
+  transition: border $primary-animation;
+
+  &:focus,
+  &:hover {
+    border: 1px solid $accent-color;
+    outline: transparent;
+  }
+}
+
+.form__icon {
+  position: absolute;
+  bottom: 11px;
+  left: 12px;
+  fill: $title-text-color;
+  cursor: pointer;
+  transition: fill $primary-animation;
+
+  .form__input:hover+&,
+  .form__input:focus+& {
+    fill: $accent-color;
+  }
+}
+
+.form__comment {
+  height: 120px;
+  padding: 12px 16px;
+  margin: 0;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  resize: none;
+  cursor: pointer;
+  transition: border var(--primary-animation);
+
+  &::placeholder {
+    color: rgba(117, 117, 117, 0.5);
+  }
+
+  &:focus,
+  &:hover {
+    border: 1px solid $accent-color;
+    outline: transparent;
+  }
+}

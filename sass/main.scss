@@ -1,0 +1,36 @@
+@import './utils/vars';
+@import './base/normalize.scss';
+@import './base/base';
+@import './base/reset';
+
+@import './utils/placeholders';
+@import './utils/mixins';
+@import './utils/is-hidden';
+
+@import './base/container';
+@import './base/section';
+@import './base/subtitle';
+
+@import './components/backdrop';
+@import './components/modal';
+@import './components/close-btn';
+@import './components/form';
+@import './components/checkbox';
+@import './components/mobile-menu';
+@import './components/logo';
+@import './components/navigation';
+@import './components/contacts';
+@import './components/primary-btn';
+@import './components/social';
+@import './components/filter';
+@import './components/address';
+@import './components/subscribe';
+
+@import './layouts/header';
+@import './layouts/hero';
+@import './layouts/features';
+@import './layouts/work';
+@import './layouts/stuff';
+@import './layouts/clients';
+@import './layouts/footer';
+@import './layouts/gallery';
